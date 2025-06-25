@@ -35,10 +35,11 @@ Este projeto simula um sistema simples de criação de heróis com diferentes cl
 
 ## 📦 Estrutura do Projeto
 ---
-/
+
 ├── index.html
 ├── README.md
-└── src/
+ └── src/
+ 
     ├── css/
     │   └── style.css
     └── js/
