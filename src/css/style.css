@@ -1,0 +1,80 @@
+/* Reset simples */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://img.freepik.com/fotos-premium/retrato-realista-de-modelo-de-moda-cgi-de-alijah-no-estilo-unreal-engine-5_899449-408771.jpg?ga=GA1.1.885463775.1750876021&semt=ais_items_boosted&w=740');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px #000;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input, select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.output {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem auto 0;
+  border-radius: 10px;
+}
