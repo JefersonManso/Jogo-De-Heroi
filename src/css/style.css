@@ -1,4 +1,4 @@
-/* Reset simples */
+/* Reset simples para remover margens e paddings padrão */
 
 * {
   margin: 0;
@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Estilos globais para o body da página */
 body {
   font-family: Arial, sans-serif;
   background-image: url('https://img.freepik.com/fotos-premium/retrato-realista-de-modelo-de-moda-cgi-de-alijah-no-estilo-unreal-engine-5_899449-408771.jpg?ga=GA1.1.885463775.1750876021&semt=ais_items_boosted&w=740');
@@ -19,6 +20,7 @@ body {
   padding: 1rem;
 }
 
+/* Container principal que envolve o conteúdo */
 .container {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 2rem;
@@ -29,21 +31,25 @@ body {
   box-shadow: 0 0 15px #000;
 }
 
+/* Título principal */
 h1 {
   margin-bottom: 1rem;
 }
 
+/* Estilo do formulário */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* Estilo dos rótulos dos inputs */
 label {
   font-weight: bold;
   text-align: left;
 }
 
+/* Estilos comuns para campos de entrada e seleção */
 input, select {
   padding: 0.5rem;
   border-radius: 5px;
@@ -51,6 +57,7 @@ input, select {
   font-size: 1rem;
 }
 
+/* Estilização do botão */
 button {
   padding: 0.75rem;
   background-color: #4caf50;
@@ -62,15 +69,18 @@ button {
   transition: background-color 0.3s ease;
 }
 
+/* Cor alternativa ao passar o mouse no botão */
 button:hover {
   background-color: #45a049;
 }
 
+/* Estilo da área onde a mensagem de ataque é exibida */
 .output {
   margin-top: 1.5rem;
   font-size: 1.2rem;
 }
 
+/* Estilo da imagem do herói */
 .hero-image {
   display: none;
   width: 100%;

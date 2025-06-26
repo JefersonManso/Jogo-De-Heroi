@@ -6,11 +6,14 @@
     <title>Jogo de Herói - Classes JS</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-    <main class="container">
-        <h1>Jogo de Herói</h1>
 
-        <form id="heroForm">
+     <!-- Corpo do documento (conteúdo visível ao usuário) -->
+<body>
+     <!-- Container principal da página -->
+    <main class="container">
+        <h1>Jogo de Herói</h1> <!-- Título da aplicação -->
+
+        <form id="heroForm">   <!-- Formulário para criar o herói -->
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required />
 
@@ -19,20 +22,22 @@
 
             <label for="type">Tipo:</label>
             <select id="type" name="type" required>
+            <!-- Menu dropdown com os tipos de herói -->
                 <option value="" disabled selected>Selecione o tipo</option>
                 <option value="mago">Mago</option>
                 <option value="guerreiro">Guerreiro</option>
                 <option value="monge">Monge</option>
                 <option value="ninja">Ninja</option>
             </select>
-
+              <!-- Botão que envia o formulário para acionar a lógica JS -->
             <button type="submit"> Criar Herói e Atacar</button>
         </form>
-
+        <!-- Seção onde será exibida a mensagem do ataque -->
         <section id="output" class="output"></section>
+        <!-- Imagem que será atualizada dinamicamente com um GIF referente ao tipo do herói -->
         <img id="heroImage" class="hero-image" src="" alt="Imagem do herói">
     </main>
-
+    <!-- Script JavaScript que contém a lógica do jogo e interação do formulário -->
     <script src="src/js/script.js"></script>
 </body>
 </html>
