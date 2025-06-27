@@ -33,19 +33,25 @@ Este projeto simula um sistema simples de criação de heróis com diferentes cl
 
 ---
 
-## 📦 Estrutura do Projeto
+## 🔄 Fluxograma do Projeto
+
+Abaixo está o fluxograma que representa o funcionamento do sistema de criação de heróis:
+
+![Fluxograma do Projeto](fluxograma.png)
+
 ---
 
-├── index.html
 
+## 📦 Estrutura do Projeto
+---
+jodo de heroi/
 ├── README.md
-
- └── src/
- 
+├── fluxograma.png 
+├── index.html
+└── src/
     ├── css/
-    │   └── style.css
     └── js/
-        └── script.js 
+
 
 ---
 
@@ -70,6 +76,7 @@ Este projeto simula um sistema simples de criação de heróis com diferentes cl
 4. Clique em "Criar Herói e Atacar".
 5. Visualize a mensagem e o GIF do personagem.
 
+---
 ## 💡 Inspiração
 
 Projeto criado com foco no aprendizado prático de JavaScript moderno (ES6+), especialmente no uso de **POO, manipulação de DOM** e construção de interfaces simples.
