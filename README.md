@@ -80,8 +80,14 @@ jodo de heroi/
 3. Preencha o formulário com os dados do herói.
 4. Clique em "Criar Herói e Atacar".
 5. Visualize a mensagem e o GIF do personagem.
+   
 
 ---
+
+### LINK do projeto: <a href="https://jefersonmanso.github.io/Jogo-De-Heroi/" target="_blank">Acesse o projeto aqui</a>
+
+---
+
 ## 💡 Inspiração
 
 Projeto criado com foco no aprendizado prático de JavaScript moderno (ES6+), especialmente no uso de **POO, manipulação de DOM** e construção de interfaces simples.
