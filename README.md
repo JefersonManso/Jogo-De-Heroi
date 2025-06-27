@@ -45,10 +45,15 @@ Abaixo está o fluxograma que representa o funcionamento do sistema de criação
 ## 📦 Estrutura do Projeto
 ---
 jodo de heroi/
+
 ├── README.md
+
 ├── fluxograma.png 
+
 ├── index.html
+
 └── src/
+
     ├── css/
     └── js/
 
