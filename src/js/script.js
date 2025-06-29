@@ -38,7 +38,7 @@ const heroImage = document.getElementById('heroImage');
 
 // Objeto contendo os tipos e seus respectivos GIFs
 const heroGifs = {
-  mago: 'https://media.tenor.com/EZh_lq0a8VAAAAAm/glitterypopcorn-wizard.webp',
+  mago: 'https://media.tenor.com/8JkSDP12vB4AAAAM/anime-spell.gif',
   guerreiro: 'https://i.gifer.com/BBh3.gif',
   monge: 'https://i.gifer.com/4Mi8.gif',
   ninja: 'https://media1.tenor.com/m/GmdYZqfxe28AAAAC/haku-naruto.gif'
