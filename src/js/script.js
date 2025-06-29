@@ -38,10 +38,10 @@ const heroImage = document.getElementById('heroImage');
 
 // Objeto contendo os tipos e seus respectivos GIFs
 const heroGifs = {
-  mago: 'https://tenor.com/bFPaTH57nMq.gif',
+  mago: 'https://media.tenor.com/EZh_lq0a8VAAAAAm/glitterypopcorn-wizard.webp',
   guerreiro: 'https://i.gifer.com/BBh3.gif',
   monge: 'https://i.gifer.com/4Mi8.gif',
-  ninja: 'https://tenor.com/bRSAE.gif'
+  ninja: 'https://media1.tenor.com/m/GmdYZqfxe28AAAAC/haku-naruto.gif'
 };
 
 // Adiciona um ouvinte de evento para o envio do formulário
