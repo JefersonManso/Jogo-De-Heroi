@@ -38,10 +38,10 @@ const heroImage = document.getElementById('heroImage');
 
 // Objeto contendo os tipos e seus respectivos GIFs
 const heroGifs = {
-  mago: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDFmcWFzbTloc3Uwb3U5eWIyaGtzamtza2hhanZtc3hlMmxpcDFjOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GzNzzmpnxXbIxkU5jP/200.webp',
-  guerreiro: 'https://i.gifer.com/origin/db/dbaa6f21ee8405f49b4e30a6f484a1fa_w200.webp',
-  monge: 'https://i.gifer.com/origin/8f/8f5d7b2bf91e21b851728cac6788100f_w200.webp',
-  ninja: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHQ4ZDJjcTc0b3c3a3EyN3BpZWhmbjgwN3lkMXAxdmFjZ2ZxaGdyMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zUO7Qh1Mysk2FXjMPG/200.webp'
+  mago: 'https://i.gifer.com/JcPs.gif',
+  guerreiro: 'https://i.gifer.com/BBh3.gif',
+  monge: 'https://i.gifer.com/4Mi8.gif',
+  ninja: 'https://i.gifer.com/DUpp.gif'
 };
 
 // Adiciona um ouvinte de evento para o envio do formulário
