@@ -1,82 +1,68 @@
-// Classe Heroi representando um personagem genérico de aventura
+// Define a classe Heroi com nome, idade e tipo
 class Heroi {
   constructor(nome, idade, tipo) {
     this.nome = nome;
     this.idade = idade;
-    this.tipo = tipo.toLowerCase();
+    this.tipo = tipo;
   }
-  // Método que retorna a ação de ataque do herói
+
+  // Método que retorna a mensagem de ataque personalizada
   atacar() {
-    let ataque = '';
-
-    // Verifica o tipo do herói e define o ataque correspondente
     switch (this.tipo) {
-      case 'mago':
-        ataque = 'magia';
-        break;
-      case 'guerreiro':
-        ataque = 'espada';
-        break;
-      case 'monge':
-        ataque = 'artes marciais';
-        break;
-      case 'ninja':
-        ataque = 'shuriken';
-        break;
+      case "mago":
+        return "O mago atacou usando magia!";
+      case "guerreiro":
+        return "O guerreiro atacou usando espada!";
+      case "monge":
+        return "O monge atacou usando artes marciais!";
+      case "ninja":
+        return "O ninja atacou usando shuriken!";
       default:
-        ataque = 'um ataque desconhecido'; // Caso o tipo não esteja entre os esperados
+        return "Tipo desconhecido.";
     }
+  }
 
-    return `${this.tipo} atacou usando ${ataque}`;   // Retorna a frase com o tipo e o ataque do herói
+  // Método que retorna o GIF correspondente ao tipo de herói
+  getGif() {
+    switch (this.tipo) {
+      case "mago":
+        return "https://i.gifer.com/31Kl.gif";
+      case "guerreiro":
+        return "https://i.gifer.com/Vg7.gif";
+      case "monge":
+        return "https://i.gifer.com/OxAz.gif";
+      case "ninja":
+        return "https://i.gifer.com/YAS0.gif";
+      default:
+        return "";
+    }
   }
 }
 
-// Captura os elementos do DOM
-const form = document.getElementById('heroForm');
-const output = document.getElementById('output');
-const heroImage = document.getElementById('heroImage');
+// Função principal executada ao clicar no botão "Atacar"
+function jogar() {
+  // Captura os valores dos campos do formulário
+  const nome = document.getElementById("nome").value;
+  const idade = parseInt(document.getElementById("idade").value);
+  const tipo = document.getElementById("tipo").value;
 
-// Objeto contendo os tipos e seus respectivos GIFs
-const heroGifs = {
-  mago: 'https://media.tenor.com/8JkSDP12vB4AAAAM/anime-spell.gif',
-  guerreiro: 'https://i.gifer.com/BBh3.gif',
-  monge: 'https://i.gifer.com/4Mi8.gif',
-  ninja: 'https://media1.tenor.com/m/GmdYZqfxe28AAAAC/haku-naruto.gif'
-};
+  // Seleciona os elementos onde serão exibidos os resultados
+  const resultadoEl = document.getElementById("resultado");
+  const sprite = document.getElementById("sprite");
 
-// Adiciona um ouvinte de evento para o envio do formulário
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Impede o recarregamento da página ao enviar o form
-
-  // Captura e trata os valores do formulário
-
-  const nome = form.name.value.trim();
-  const idade = Number(form.age.value);
-  const tipo = form.type.value;
-
-  // Verifica se todos os campos foram preenchidos
-  if (!nome || !idade || !tipo) {
-    output.textContent = 'Preencha todos os campos.';
-    heroImage.style.display = 'none';
+  // Validação: nome e idade obrigatórios
+  if (!nome || isNaN(idade)) {
+    resultadoEl.innerText = "Preencha todos os campos!";
+    sprite.src = ""; // Limpa imagem
     return;
   }
 
-  // Cria um novo herói com os dados fornecidos
+  // Cria o herói com os dados informados
   const heroi = new Heroi(nome, idade, tipo);
 
-   // Exibe a mensagem de ataque do herói
-  output.textContent = heroi.atacar(); 
+  // Exibe a mensagem de ataque
+  resultadoEl.innerText = heroi.atacar();
 
-  
-  // Atualiza a imagem de acordo com o tipo do herói
-  const gifUrl = heroGifs[tipo];
-  if (gifUrl) {
-    console.log('GIF URL:', gifUrl);
-
-    heroImage.src = gifUrl;
-    heroImage.alt = `Herói ${tipo}`;
-    heroImage.style.display = 'block';
-  } else {
-    heroImage.style.display = 'none';
-  }
-});
+  // Exibe o GIF correspondente
+  sprite.src = heroi.getGif();
+}

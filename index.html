@@ -1,43 +1,46 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!-- index.html -->
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Herói - Classes JS</title>
-    <link rel="stylesheet" href="src/css/style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação dos caracteres como UTF-8 -->
+  <title>Jogo do Herói </title> <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="src/css/style.css"> <!-- Importa o arquivo CSS externo -->
 </head>
-
-     <!-- Corpo do documento (conteúdo visível ao usuário) -->
 <body>
-     <!-- Container principal da página -->
-    <main class="container">
-        <h1>Jogo de Herói</h1> <!-- Título da aplicação -->
+  <div class="container"> <!-- Container principal da interface -->
 
-        <form id="heroForm">   <!-- Formulário para criar o herói -->
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required />
+    <h1>🏹 Herói da Aventura</h1> <!-- Título do jogo -->
 
-            <label for="age">Idade</label>
-            <input type="number" id="age" name="age" min="1" required />
+    <div class="card"> <!-- Bloco que agrupa os campos do formulário -->
 
-            <label for="type">Tipo:</label>
-            <select id="type" name="type" required>
-            <!-- Menu dropdown com os tipos de herói -->
-                <option value="" disabled selected>Selecione o tipo</option>
-                <option value="mago">Mago</option>
-                <option value="guerreiro">Guerreiro</option>
-                <option value="monge">Monge</option>
-                <option value="ninja">Ninja</option>
-            </select>
-              <!-- Botão que envia o formulário para acionar a lógica JS -->
-            <button type="submit"> Criar Herói e Atacar</button>
-        </form>
-        <!-- Seção onde será exibida a mensagem do ataque -->
-        <section id="output" class="output"></section>
-        <!-- Imagem que será atualizada dinamicamente com um GIF referente ao tipo do herói -->
-        <img id="heroImage" class="hero-image" src="" alt="Imagem do herói">
-    </main>
-    <!-- Script JavaScript que contém a lógica do jogo e interação do formulário -->
-    <script src="src/js/script.js"></script>
+      <!-- Campo de texto para o nome do herói -->
+      <label>Nome: <input type="text" id="nome" /></label>
+
+      <!-- Campo numérico para a idade -->
+      <label>Idade: <input type="number" id="idade" /></label>
+
+      <!-- Menu de seleção do tipo de herói -->
+      <label>Tipo:
+        <select id="tipo">
+          <option value="guerreiro">Guerreiro</option>
+          <option value="mago">Mago</option>
+          <option value="monge">Monge</option>
+          <option value="ninja">Ninja</option>
+        </select>
+      </label>
+
+      <!-- Botão que executa a função "jogar()" ao ser clicado -->
+      <button onclick="jogar()">Atacar</button>
+
+      <!-- Imagem que será trocada pelo GIF correspondente ao herói -->
+      <img id="sprite" src="" alt="Sprite do Herói" width="120" style="image-rendering: pixelated;" />
+
+      <!-- Parágrafo onde a mensagem do ataque será exibida -->
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <!-- Importa o arquivo JavaScript com a lógica do jogo -->
+  <script src="src/js/script.js"></script>
 </body>
 </html>
