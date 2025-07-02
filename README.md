@@ -44,18 +44,17 @@ Abaixo está o fluxograma que representa o funcionamento do sistema de criação
 
 ## 📦 Estrutura do Projeto
 ---
+```txt
 Jogo-De-Heroi/
 ├── README.md
+├── index.html
 ├── assets/
 │   └── fluxograma.png
-├── index.html
 └── src/
     ├── css/
     └── js/
+```
 
-
-
----
 
 
 ## 🛠️ Tecnologias Utilizadas
