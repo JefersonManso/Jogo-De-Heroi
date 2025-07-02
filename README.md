@@ -37,25 +37,22 @@ Este projeto simula um sistema simples de criação de heróis com diferentes cl
 
 Abaixo está o fluxograma que representa o funcionamento do sistema de criação de heróis:
 
-![Fluxograma do Projeto](fluxograma.png)
+![Fluxograma do Projeto](assets/fluxograma.png)
 
 ---
 
 
 ## 📦 Estrutura do Projeto
 ---
-jodo de heroi/
-
+Jogo-De-Heroi/
 ├── README.md
-
-├── fluxograma.png 
-
+├── assets/
+│   └── fluxograma.png
 ├── index.html
-
 └── src/
-
     ├── css/
     └── js/
+
 
 
 ---

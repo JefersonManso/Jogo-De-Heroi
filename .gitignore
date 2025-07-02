@@ -1,1 +1,12 @@
+# Ignorar configurações do VS Code
 .vscode/
+
+# Ignorar sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outros arquivos pessoais ou de build
+node_modules/
+dist/
+.env
+
